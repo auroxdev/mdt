@@ -4,7 +4,7 @@ game 'gta5'
 author 'mafewtm'
 name 'm_mdt'
 description ''
-repository 'https://github.com/mafewtm/m_mdt
+repository 'https://github.com/mafewtm/m_mdt'
 version '1.0.0'
 
 ui_page 'web/build/index.html'
