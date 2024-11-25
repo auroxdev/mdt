@@ -3,9 +3,11 @@ game 'gta5'
 
 author 'mafewtm'
 name 'm_mdt'
-description ''
+description 'Just another MDT'
 repository 'https://github.com/mafewtm/m_mdt'
 version '1.0.0'
+
+ox_lib 'locale'
 
 ui_page 'web/build/index.html'
 
@@ -19,8 +21,7 @@ server_scripts {
 }
 
 files {
-    'config/client.lua',
-    'config/shared.lua',
+    'locales/*.json',
     'web/build/index.html',
     'web/build/assets/*.*'
 }

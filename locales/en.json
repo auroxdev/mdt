@@ -1,1 +1,5 @@
-{}
+{
+  "failed_spawn": "Failed to spawn tablet",
+  "failed_get_controls": "Failed to get control",
+  "open_keybind": "Opens the MDT"
+}
