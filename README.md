@@ -1,4 +1,4 @@
-# m_mdt
+# Aurox MDT
 
 Just another MDT built in React with shadcn/ui and tailwind
 

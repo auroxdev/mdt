@@ -1,10 +1,10 @@
 fx_version 'cerulean'
 game 'gta5'
 
+name 'aurox_mdt'
 author 'mafewtm'
-name 'm_mdt'
 description 'Just another MDT'
-repository 'https://github.com/mafewtm/m_mdt'
+repository 'https://github.com/auroxdev/mdt'
 version '1.0.0'
 
 ox_lib 'locale'
