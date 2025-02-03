@@ -6,64 +6,60 @@ body:
     attributes:
       value: |
         Thank you for taking the time to fill out a bug report!
-  - type: input
+  - type: textarea
     id: summary
     attributes:
       label: Summary
-      description: Write a short and concise description of your bug.
+      description: Please give us a brief summary of the issue you're experiencing.
     validations:
       required: true
   - type: textarea
     id: repro
     attributes:
       label: Reproduction
-      description: What did you do to make this happen?
-      placeholder: |
-        1. Using ...
-        2. Do ...
-        3. Then use ...
-        4. See error
+      description: What would we have to do in order to reproduce this issue?
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
       label: Expected behavior
-      description: What did you expect to happen?
+      description: What is expected to happen?
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
       label: Actual behavior
-      description: What actually happened?
+      description: What is actually happening?
     validations:
       required: true
-  - type: textarea
-    id: additional
-    attributes:
-      label: Additional context
-      description: If you have any other context about the problem such as screenshots or videos, add them here.
   - type: input
     id: updated
     attributes:
       label: Last Updated
-      description: When have you last updated?
+      description: When did you last update this resource?
       placeholder: e.g. last week, today
     validations:
       required: true
   - type: input
-    id: custom
+    id: artifact
     attributes:
-      label: Custom Resources
-      description: Are you using custom resources? Which ones?
-      placeholder: e.g. zdiscord, qb-target
+      label: FiveM Artifact
+      description: Which version of the FiveM artifact are you using?
+      placeholder: e.g. 7290, 10748, 12735
     validations:
       required: true
   - type: input
-    id: renamed
+    id: modified
     attributes:
-      label: Resource Rename
-      description: Have you renamed this resource from `m_` to something custom?
+      label: Modified
+      description: Have you modified the resource in any way? If so, how?
+      placeholder: e.g. added new features, removed features
     validations:
-      required: true
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional comments
+      description: If you have any additional comments or information which might better help us understand the issue, please provide it here.

@@ -3,30 +3,14 @@ description: Suggest an idea
 labels: enhancement
 body:
   - type: textarea
-    id: problem
+    id: summary
     attributes:
-      label: The problem
-      description: A clear and concise description of what the problem is, or what feature you want to be implemented.
-      placeholder: |
-        Some examples:
-        I'm frustrated that ...
-        It would be nice if ...
+      label: Summary
+      description: Please give us a detailed summary of the feature or enhancement you're proposing and how it would benefit the community.
     validations:
       required: true
-  - type: textarea
-    id: solution
-    attributes:
-      label: Ideal solution
-      description: A clear and concise description of what you want to happen, with as much detail as possible.
-    validations:
-      required: true
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: Alternative solutions
-      description: A clear and concise description of any alternative solutions or features you've considered.
   - type: textarea
     id: additional
     attributes:
-      label: Additional context
-      description: If you have any other context about the problem such as screenshots or videos, add them here.
+      label: Additional comments
+      description: If you have any additional comments or information which might better help us understand the request, please provide it here.

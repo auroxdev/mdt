@@ -6,5 +6,4 @@
 
 <!-- Put an x inside the [ ] to check an item, like so: [x] -->
 
-- [ ] I have personally loaded this code into a server and checked all of its functionality.
-- [ ] My pull request fits the contribution guidelines & code conventions.
+- [ ] I have personally loaded this code into a server and checked all of it's functionality.

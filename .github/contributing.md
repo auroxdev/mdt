@@ -44,7 +44,7 @@ Below are conventions that you must follow when contributing code.
 
 ### Commit Message Conventions
 
-- The first line of a commit message must be 72 characters at most.
+- Keep the first line of your commit message short and descriptive.
 - Commit messages and pull request titles must follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
   - Use `fix:` when patching a bug.
   - Use `feat:` when introducing a new feature.
@@ -54,36 +54,31 @@ Below are conventions that you must follow when contributing code.
 
 ### Lua Conventions
 
+###### *Consider [this guide](https://manason.github.io/effective-fivem-lua/) when working with FiveM Lua*
+
 #### General Style
 
-- Use 4 space indentation for Lua files and 2 space indentation for CSS, JS, TS, or MySQL files.
-- Use single quotes over double quotes when possible.
-- Prefer creating local variables over global ones.
-- Don't repeat yourself. If you're using the same operations in multiple different places convert them into a flexible function.
-- Exported functions must be properly annotated (see [LuaLS Annotations](https://luals.github.io/wiki/annotations/)).
-- Utilize [ox_lib](https://overextended.dev/ox_lib) to make your life easier. Prefer lib calls over native ones.
-- Make use of config options where it makes sense to make features optional and/or customizable. Configs should not be modified by other code.
+- Use 4 space indentation for Lua files and 2 space indentation for CSS, JS, TS, or SQL files.
+- Prioritize the use of local variables and functions instead of global ones.
+- Avoid redundancy by converting repetitive operations into flexible, reusable functions.
+- Avoid clumping and compacting code. Keep it readable and maintainable.
+- Functions, particularly exports, should be properly annotated (see [LuaLS Annotations](https://luals.github.io/wiki/annotations/)).
+- Utilize [ox_lib](https://overextended.dev/ox_lib) wherever and whenever possible.
 
 #### Optimization & Security
 
-- Consider [this Lua Performance guide](https://springrts.com/wiki/Lua_Performance).
-- Don't create unnecessary threads. Always try to find a better method of triggering events.
-- Set longer `Wait` calls in distance checking loops when the player is out of range.
-- Don't waste cycles; job specific loops should only run for players with that job.
-- When possible don't trust the client, *especially* with transactions.
-- Balance security and optimizations.
-- Use `#(vector3 - vector3)` instead of `GetDistanceBetweenCoords()`.
-- Use `myTable[#myTable + 1] = 'value'` instead of `table.insert(myTable, 'value')`.
-- Use `myTable['key'] = 'value'` instead of `table.insert(myTable, 'key', 'value')`.
+- When in doubt, don't trust the client. Especially with transactions.
+- Avoid creating unnecessary threads.
+- Use guard clauses where applicable instead of nesting conditionals.
 
 #### Naming
 
-- Use `camelCase` for local variables and functions.
+- Use `camelCase` for local variables and functions and parameters.
 - Use `PascalCase` for global variables and functions.
-- Avoid acronyms as they can be confusing and context dependant.
-- Be descriptive; make it easy for the reader.
-  - Booleans may be prefixed with `is`, `has`, `are`, etc.
-  - Arrays should have plural names.
+- Avoid acronyms as they can be confusing and are often context dependent.
+- Be descriptive; make it easy for your fellow developers.
+- Booleans may be prefixed with `is`, `has`, `are`, etc.
+- Arrays should have plural names.
 
 ### JavaScript/TypeScript Conventions
 
