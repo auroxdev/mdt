@@ -1,20 +1,31 @@
-import { isEnvBrowser } from './misc';
+/**
+ * Emulates dispatching an event using SendNuiMessage in the lua scripts.
+ * This is used when developing in a browser environment.
+ *
+ * @param events - The event(s) you want to emulate.
+ * @param options - Configuration options for debugging.
+ * @param options.timer - How long until the event should trigger (in milliseconds). Default is 1000ms.
+ * @param options.force - Whether to force the event to trigger even outside development mode. Default is false.
+ */
 
-interface DebugEvent<T = any> {
+import { isDevBrowser } from './isDevBrowser';
+
+interface DebugEvent<T = unknown> {
   action: string;
   data: T;
 }
 
-/**
- * Emulates dispatching an event using SendNuiMessage in the lua scripts.
- * This is used when developing in browser
- *
- * @param events - The event you want to cover
- * @param timer - How long until it should trigger (ms)
- */
-export const debugData = <P>(events: DebugEvent<P>[], timer = 1000): void => {
-  if (import.meta.env.MODE === 'development' && isEnvBrowser()) {
-    for (const event of events) {
+export const debugData = <P>(
+  events: DebugEvent<P> | DebugEvent<P>[],
+  options: { timer?: number; force?: boolean } = {}
+): void => {
+  const { timer = 1000, force = false } = options;
+
+  // Only run in development or if forced
+  if (isDevBrowser() || force) {
+    const eventList = Array.isArray(events) ? events : [events];
+
+    eventList.forEach((event, index) => {
       setTimeout(() => {
         window.dispatchEvent(
           new MessageEvent('message', {
@@ -24,7 +35,7 @@ export const debugData = <P>(events: DebugEvent<P>[], timer = 1000): void => {
             },
           })
         );
-      }, timer);
-    }
+      }, timer * (index + 1)); // Stagger events if multiple are provided
+    });
   }
 };

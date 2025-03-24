@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router';
 import { debugData } from './utils/debugData';
-import { isEnvBrowser } from './utils/misc';
+import { isDevBrowser } from '@/utils/isDevBrowser';
 import App from './App';
 import './main.css';
 
@@ -13,7 +13,7 @@ debugData([
   },
 ]);
 
-if (isEnvBrowser()) {
+if (isDevBrowser()) {
   const root = document.getElementById('root');
 
   // https://i.imgur.com/iPTAdYV.png - Night time img
