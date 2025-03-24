@@ -7,3 +7,5 @@
 export const isDevBrowser = (): boolean => {
   return import.meta.env.DEV && !(window as any).invokeNative;
 };
+
+export const isEnvBrowser = (): boolean => !(window as any).invokeNative;

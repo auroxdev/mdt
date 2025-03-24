@@ -10,7 +10,7 @@
  * @returns A promise for the data sent back by the NuiCallbacks CB argument.
  */
 
-import { isDevBrowser } from './isDevBrowser';
+import { isDevBrowser } from './isBrowser';
 
 const fetch = window.fetch;
 // @ts-expect-error

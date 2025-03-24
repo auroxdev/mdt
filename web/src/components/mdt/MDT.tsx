@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router';
 import { useNuiEvent } from '@/utils/useNuiEvent';
 import { fetchNui } from '@/utils/fetchNui';
+import { isEnvBrowser } from '@/utils/isBrowser';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Dashboard from './pages/dashboard/Dashboard';
@@ -10,7 +11,8 @@ import Reports from './pages/reports/Reports';
 import PenalCode from './pages/penalcode/PenalCode';
 
 export default function MDT() {
-  const [visible, setVisible] = useState(false);
+  const isDev = isEnvBrowser() && true || false;
+  const [visible, setVisible] = useState(isDev);
 
   useNuiEvent('setVisible', (status: boolean) => setVisible(status));
 

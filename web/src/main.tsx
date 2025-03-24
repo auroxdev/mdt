@@ -1,11 +1,11 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router';
-import { isDevBrowser } from '@/utils/isDevBrowser';
+import { isEnvBrowser } from '@/utils/isBrowser';
 import App from './App';
 import './main.css';
 
-if (isDevBrowser()) {
+if (isEnvBrowser()) {
   const root = document.getElementById('root');
 
   // https://i.imgur.com/iPTAdYV.png - Night time img

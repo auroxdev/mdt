@@ -8,7 +8,7 @@
  * @param options.force - Whether to force the event to trigger even outside development mode. Default is false.
  */
 
-import { isDevBrowser } from './isDevBrowser';
+import { isDevBrowser } from './isBrowser';
 
 interface DebugEvent<T = unknown> {
   action: string;
