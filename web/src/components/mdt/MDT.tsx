@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router';
-import { useNuiEvent } from '@/hooks/useNuiEvent';
+import { useNuiEvent } from '@/utils/useNuiEvent';
 import { fetchNui } from '@/utils/fetchNui';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
