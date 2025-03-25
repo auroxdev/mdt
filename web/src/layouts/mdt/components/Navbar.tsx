@@ -33,7 +33,7 @@ const NavButton = ({ icon, label, path }: NavButtonProps) => {
 
 export default function Navbar() {
   return (
-    <div className='flex flex-col h-fit w-fit justify-between rounded-md border border-zinc-600 bg-zinc-750 p-3 drop-shadow-md'>
+    <div className='flex flex-col size-fit justify-between rounded-md border border-zinc-600 bg-zinc-750 p-3 drop-shadow-md'>
       <div className='flex flex-col items-center gap-3'>
         <NavButton icon='carbon:home' label='Home' path='/' />
         <NavButton icon='carbon:user-multiple' label='Profiles' path='profiles' />

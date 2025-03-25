@@ -33,11 +33,11 @@ export default function MDT() {
 
   return (
     <div className='h-screen w-screen items-center justify-center' style={{ display: visible ? 'flex' : 'none' }}>
-      <div className='flex flex-col h-[85%] w-[85%] rounded-md border-2 border-solid border-zinc-750 drop-shadow-md'>
+      <div className='flex flex-col size-[85%] rounded-md border-2 border-solid border-zinc-750 drop-shadow-md'>
         <Header />
-        <div className='flex h-full w-full bg-zinc-700 gap-5 p-5'>
+        <div className='flex size-full bg-zinc-700 gap-5 p-5'>
           <Navbar />
-          <div className='flex h-full w-full'>
+          <div className='flex size-full'>
             <Routes>
               <Route index element={<Dashboard />} />
               <Route path='profiles' element={<Profiles />} />
