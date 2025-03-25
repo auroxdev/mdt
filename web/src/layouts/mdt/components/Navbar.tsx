@@ -1,11 +1,12 @@
+import { ReactNode } from 'react';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { Icon } from '@iconify/react';
+import { Home, UserMultiple, DocumentMultiple_01, ScalesTipped } from '@carbon/icons-react';
 import clsx from 'clsx';
 import { NavLink } from 'react-router';
 
 interface NavButtonProps {
-  icon: string; // Iconify (see https://icon-sets.iconify.design/)
+  icon: ReactNode;
   label: string;
   path: string;
 }
@@ -18,7 +19,7 @@ const NavButton = ({ icon, label, path }: NavButtonProps) => {
           <NavLink to={path}>
             {({ isActive }) => (
               <Button variant='ghost' size='icon' className={clsx("hover:bg-zinc-700", isActive && "bg-zinc-700")}>
-                <Icon icon={icon} className='h-5 w-5 text-zinc-300' />
+                {icon}
               </Button>
             )}
           </NavLink>
@@ -35,10 +36,10 @@ export default function Navbar() {
   return (
     <div className='flex flex-col size-fit justify-between rounded-md border border-zinc-600 bg-zinc-750 p-3 drop-shadow-md'>
       <div className='flex flex-col items-center gap-3'>
-        <NavButton icon='carbon:home' label='Home' path='/' />
-        <NavButton icon='carbon:user-multiple' label='Profiles' path='profiles' />
-        <NavButton icon='carbon:document-multiple-01' label='Reports' path='reports' />
-        <NavButton icon='carbon:scales-tipped' label='Penal Code' path='penalcode' />
+        <NavButton icon={<Home className='size-5 text-zinc-300' />} label='Home' path='/' />
+        <NavButton icon={<UserMultiple className='size-5 text-zinc-300' />} label='Profiles' path='profiles' />
+        <NavButton icon={<DocumentMultiple_01 className='size-5 text-zinc-300' />} label='Reports' path='reports' />
+        <NavButton icon={<ScalesTipped className='size-5 text-zinc-300' />} label='Penal Code' path='penalcode' />
       </div>
     </div>
   );

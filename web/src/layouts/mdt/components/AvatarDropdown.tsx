@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { Icon } from '@iconify/react';
+import { Restart, User, Logout } from '@carbon/icons-react';
 
 const AvatarDropdown = () => {
   return (
@@ -24,15 +24,15 @@ const AvatarDropdown = () => {
         <DropdownMenuSeparator className='bg-zinc-600' />
         <DropdownMenuGroup>
           <DropdownMenuItem className='hover:bg-zinc-700'>
-          <Icon icon='carbon:user' /> My Profile
+          <User /> My Profile
           </DropdownMenuItem>
           <DropdownMenuItem className='hover:bg-zinc-700'>
-            <Icon icon='carbon:restart' /> Reboot MDT
+            <Restart /> Reboot MDT
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator className='bg-zinc-600' />
         <DropdownMenuItem className='hover:bg-zinc-700'>
-          <Icon icon='carbon:logout' /> Log out
+          <Logout /> Log out
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
