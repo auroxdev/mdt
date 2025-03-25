@@ -23,14 +23,14 @@ const AvatarDropdown = () => {
         </DropdownMenuLabel>
         <DropdownMenuSeparator className='bg-zinc-650' />
         <DropdownMenuGroup>
-          <DropdownMenuItem className='hover:bg-zinc-700'>
+          <DropdownMenuItem className='hover:bg-zinc-700 data-highlighted:bg-zinc-700 data-highlighted:text-zinc-300'>
           <User /> My Profile
           </DropdownMenuItem>
-          <DropdownMenuItem className='hover:bg-zinc-700'>
+          <DropdownMenuItem className='hover:bg-zinc-700 data-highlighted:bg-zinc-700 data-highlighted:text-zinc-300'>
             <Restart /> Reboot MDT
           </DropdownMenuItem>
         </DropdownMenuGroup>
-        <DropdownMenuSeparator className='bg-zinc-600' />
+        <DropdownMenuSeparator className='bg-zinc-650' />
         <DropdownMenuItem className='hover:bg-zinc-700 data-highlighted:bg-zinc-700 data-highlighted:text-zinc-300'>
           <Logout /> Log out
         </DropdownMenuItem>
