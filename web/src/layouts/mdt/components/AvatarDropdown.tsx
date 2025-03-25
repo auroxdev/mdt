@@ -10,7 +10,7 @@ const AvatarDropdown = () => {
         <Button variant='ghost' className='h-10 w-10 rounded-full'>
           <Avatar>
             <AvatarImage src='' />
-            <AvatarFallback className='bg-zinc-700 border border-zinc-650 hover:border-2 hover:border-zinc-500 drop-shadow-md text-zinc-300'>RS</AvatarFallback>
+            <AvatarFallback className='bg-zinc-700 border border-zinc-600 hover:border-2 hover:border-zinc-500 drop-shadow-md text-zinc-300'>RS</AvatarFallback>
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
@@ -21,7 +21,7 @@ const AvatarDropdown = () => {
             <p className='text-xs leading-none text-muted-foreground'>Chief of Police</p>
           </div>
         </DropdownMenuLabel>
-        <DropdownMenuSeparator className='bg-zinc-600' />
+        <DropdownMenuSeparator className='bg-zinc-650' />
         <DropdownMenuGroup>
           <DropdownMenuItem className='hover:bg-zinc-700'>
           <User /> My Profile
@@ -31,7 +31,7 @@ const AvatarDropdown = () => {
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator className='bg-zinc-600' />
-        <DropdownMenuItem className='hover:bg-zinc-700'>
+        <DropdownMenuItem className='hover:bg-zinc-700 data-highlighted:bg-zinc-700 data-highlighted:text-zinc-300'>
           <Logout /> Log out
         </DropdownMenuItem>
       </DropdownMenuContent>

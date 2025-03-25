@@ -35,7 +35,7 @@ export default function MDT() {
 
   return (
     <div className='h-screen w-screen items-center justify-center' style={{ display: visible ? 'flex' : 'none' }}>
-      <div className='flex flex-col size-[85%] rounded-md bg-zinc-700 border-2 border-solid border-zinc-750 drop-shadow-md'>
+      <div className='flex flex-col size-[85%] rounded-md bg-zinc-725 border-2 border-solid border-zinc-750 drop-shadow-md'>
         <Header />
         <div className='flex size-full gap-5 p-5'>
           <Navbar />
