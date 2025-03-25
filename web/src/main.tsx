@@ -1,6 +1,5 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router';
 import { isEnvBrowser } from '@/utils/isBrowser';
 import App from './App';
 import './main.css';
@@ -18,8 +17,6 @@ if (isEnvBrowser()) {
 const root = createRoot(document.getElementById('root')!);
 root.render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <App />
   </StrictMode>
 );

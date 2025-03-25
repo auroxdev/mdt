@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Route, Routes } from 'react-router';
+import { Switch, Route, Redirect } from 'wouter';
 import { useNuiEvent } from '@/utils/useNuiEvent';
 import { fetchNui } from '@/utils/fetchNui';
 import { isEnvBrowser } from '@/utils/isBrowser';
@@ -40,14 +40,14 @@ export default function MDT() {
         <div className='flex size-full bg-zinc-700 gap-5 p-5'>
           <Navbar />
           <div className='flex size-full'>
-            <Routes>
-              <Route index element={<Dashboard />} />
-              <Route path='profiles' element={<Profiles />} />
-              <Route path='incidents' element={<Incidents />} />
-              <Route path='reports' element={<Reports />} />
-              <Route path='vehicles' element={<Vehicles />} />
-              <Route path='charges' element={<Charges />} />
-            </Routes>
+            <Switch>
+              <Route path='/'><Dashboard /></Route>
+              <Route path='/profiles'><Profiles /></Route>
+              <Route path='/incidents'><Incidents /></Route>
+              <Route path='/reports'><Reports /></Route>
+              <Route path='/vehicles'><Vehicles /></Route>
+              <Route path='/charges'><Charges /></Route>
+            </Switch>
           </div>
         </div>
       </div>
