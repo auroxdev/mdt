@@ -7,7 +7,9 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Dashboard from './pages/dashboard/Dashboard';
 import Profiles from './pages/profiles/Profiles';
+import Incidents from './pages/incidents/Incidents';
 import Reports from './pages/reports/Reports';
+import Vehicles from './pages/vehicles/Vehicles';
 import Charges from './pages/charges/Charges';
 
 export default function MDT() {
@@ -41,7 +43,9 @@ export default function MDT() {
             <Routes>
               <Route index element={<Dashboard />} />
               <Route path='profiles' element={<Profiles />} />
+              <Route path='incidents' element={<Incidents />} />
               <Route path='reports' element={<Reports />} />
+              <Route path='vehicles' element={<Vehicles />} />
               <Route path='charges' element={<Charges />} />
             </Routes>
           </div>
