@@ -9,8 +9,8 @@ const AvatarDropdown = () => {
       <DropdownMenuTrigger asChild>
         <Button variant='ghost' className='h-10 w-10 rounded-full'>
           <Avatar>
-            <AvatarImage src='https://github.com/shadcn.png' />
-            <AvatarFallback className='bg-zinc-700 border border-zinc-650 drop-shadow-md text-zinc-300'>RS</AvatarFallback>
+            <AvatarImage src='' />
+            <AvatarFallback className='bg-zinc-700 border border-zinc-650 hover:border-2 hover:border-zinc-500 drop-shadow-md text-zinc-300'>RS</AvatarFallback>
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
