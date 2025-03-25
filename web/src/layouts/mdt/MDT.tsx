@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 import Dashboard from './pages/dashboard/Dashboard';
 import Profiles from './pages/profiles/Profiles';
 import Reports from './pages/reports/Reports';
-import PenalCode from './pages/penalcode/PenalCode';
+import Charges from './pages/charges/Charges';
 
 export default function MDT() {
   const isDev = isEnvBrowser() && true || false;
@@ -42,7 +42,7 @@ export default function MDT() {
               <Route index element={<Dashboard />} />
               <Route path='profiles' element={<Profiles />} />
               <Route path='reports' element={<Reports />} />
-              <Route path='penalcode' element={<PenalCode />} />
+              <Route path='charges' element={<Charges />} />
             </Routes>
           </div>
         </div>

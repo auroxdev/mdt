@@ -39,7 +39,7 @@ export default function Navbar() {
         <NavButton icon={<Home className='size-5 text-zinc-300' />} label='Home' path='/' />
         <NavButton icon={<UserMultiple className='size-5 text-zinc-300' />} label='Profiles' path='profiles' />
         <NavButton icon={<DocumentMultiple_01 className='size-5 text-zinc-300' />} label='Reports' path='reports' />
-        <NavButton icon={<ScalesTipped className='size-5 text-zinc-300' />} label='Penal Code' path='penalcode' />
+        <NavButton icon={<ScalesTipped className='size-5 text-zinc-300' />} label='Charges' path='charges' />
       </div>
     </div>
   );
