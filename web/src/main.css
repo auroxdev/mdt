@@ -214,7 +214,14 @@ html {
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
+  --color-zinc-150: #ECECEE;
+  --color-zinc-250: #DCDCE0;
+  --color-zinc-350: #BBBBC1;
+  --color-zinc-450: #898992;
+  --color-zinc-550: #62626B;
+  --color-zinc-650: #494951;
   --color-zinc-750: #333338;
+  --color-zinc-850: #202023;
 }
 
 @layer base {

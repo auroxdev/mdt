@@ -10,11 +10,11 @@ const AvatarDropdown = () => {
         <Button variant='ghost' className='h-10 w-10 rounded-full'>
           <Avatar>
             <AvatarImage src='https://github.com/shadcn.png' />
-            <AvatarFallback className='bg-zinc-700 border border-zinc-600 drop-shadow-md text-zinc-300'>RS</AvatarFallback>
+            <AvatarFallback className='bg-zinc-700 border border-zinc-650 drop-shadow-md text-zinc-300'>RS</AvatarFallback>
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align='end' forceMount className="w-48 bg-zinc-750 border border-zinc-600 text-zinc-300">
+      <DropdownMenuContent align='end' forceMount className="w-48 bg-zinc-750 border border-zinc-650 text-zinc-300">
         <DropdownMenuLabel>
           <div className='flex flex-col space-y-1'>
             <p className='text-sm font-medium leading-none'>Richard Sanches</p>

@@ -15,7 +15,7 @@ const items = [
 
 export default function Navbar() {
   return (
-    <nav className='flex flex-col size-fit rounded-md border border-zinc-600 bg-zinc-750 p-3 drop-shadow-md'>
+    <nav className='flex flex-col size-fit rounded-md border border-zinc-650 bg-zinc-750 p-3 drop-shadow-md'>
       <div className='flex flex-col items-start gap-3 w-full'>
         {items.map(({ icon: Icon, label, path }) => {
           const [isActive] = useRoute(path);
