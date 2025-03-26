@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Switch, Route, Redirect } from 'wouter';
+import { Switch, Route } from 'wouter';
 import { useNuiEvent } from '@/utils/useNuiEvent';
 import { fetchNui } from '@/utils/fetchNui';
 import { isEnvBrowser } from '@/utils/isBrowser';
