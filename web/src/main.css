@@ -214,6 +214,8 @@ html {
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
+  --font-robotoflex: 'RobotoFlex', monospace;
+
   --color-zinc-150: #ECECEE;
   --color-zinc-250: #DCDCE0;
   --color-zinc-350: #BBBBC1;
@@ -232,4 +234,11 @@ html {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: 'RobotoFlex';
+  src: url('./assets/fonts/RobotoFlex.ttf') format('truetype');
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
 }
