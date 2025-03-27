@@ -14,7 +14,7 @@ const AvatarDropdown = () => {
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align='end' forceMount className="w-48 bg-zinc-750 border border-zinc-650 text-zinc-300">
+      <DropdownMenuContent align='end' forceMount className='w-48 bg-zinc-750 border border-zinc-650 text-zinc-300'>
         <DropdownMenuLabel>
           <div className='flex flex-col space-y-1'>
             <p className='text-sm font-medium leading-none'>Richard Sanches</p>
@@ -24,15 +24,15 @@ const AvatarDropdown = () => {
         <DropdownMenuSeparator className='bg-zinc-650' />
         <DropdownMenuGroup>
           <DropdownMenuItem className='hover:bg-zinc-700 data-highlighted:bg-zinc-700 data-highlighted:text-zinc-300'>
-          <User /> My Profile
+            <User className='text-zinc-300' /> My Profile
           </DropdownMenuItem>
           <DropdownMenuItem className='hover:bg-zinc-700 data-highlighted:bg-zinc-700 data-highlighted:text-zinc-300'>
-            <Restart /> Reboot MDT
+            <Restart className='text-zinc-300' /> Reboot MDT
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator className='bg-zinc-650' />
         <DropdownMenuItem className='hover:bg-zinc-700 data-highlighted:bg-zinc-700 data-highlighted:text-zinc-300'>
-          <Logout /> Log out
+          <Logout className='text-zinc-300' /> Log out
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
