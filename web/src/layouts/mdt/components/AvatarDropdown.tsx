@@ -9,7 +9,7 @@ const AvatarDropdown = () => {
       <DropdownMenuTrigger asChild>
         <Button variant='ghost' className='h-10 w-10 rounded-full'>
           <Avatar>
-            <AvatarImage src='' />
+            <AvatarImage src='https://github.com/shadcn.png' />
             <AvatarFallback className='bg-zinc-700 border border-zinc-600 hover:border-2 hover:border-zinc-500 drop-shadow-md text-zinc-300'>RS</AvatarFallback>
           </Avatar>
         </Button>
@@ -17,7 +17,7 @@ const AvatarDropdown = () => {
       <DropdownMenuContent align='end' forceMount className='w-48 bg-zinc-750 border border-zinc-650 text-zinc-300'>
         <DropdownMenuLabel>
           <div className='flex flex-col space-y-1'>
-            <p className='text-sm font-medium leading-none'>Richard Sanches</p>
+            <p className='text-sm font-medium leading-none'>Richard Sanchez</p>
             <p className='text-xs leading-none text-muted-foreground'>Chief of Police</p>
           </div>
         </DropdownMenuLabel>
