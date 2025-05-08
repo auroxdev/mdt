@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { Restart, User, Logout } from '@carbon/icons-react';
+import { Restart, User, Logout, Renew } from '@carbon/icons-react';
 
 const AvatarDropdown = () => {
   return (
@@ -25,6 +25,9 @@ const AvatarDropdown = () => {
         <DropdownMenuGroup>
           <DropdownMenuItem className='hover:bg-zinc-700 data-highlighted:bg-zinc-700 data-highlighted:text-zinc-300'>
             <User className='text-zinc-300' /> My Profile
+          </DropdownMenuItem>
+          <DropdownMenuItem className='hover:bg-zinc-700 data-highlighted:bg-zinc-700 data-highlighted:text-zinc-300'>
+            <Renew className='text-zinc-300' /> Change Status
           </DropdownMenuItem>
           <DropdownMenuItem className='hover:bg-zinc-700 data-highlighted:bg-zinc-700 data-highlighted:text-zinc-300'>
             <Restart className='text-zinc-300' /> Reboot MDT
