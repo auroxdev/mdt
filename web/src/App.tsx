@@ -1,4 +1,4 @@
-import MDT from '@/layouts/mdt/MDT';
+import MDT from './layouts/mdt/MDT';
 
 export default function App() {
   return (

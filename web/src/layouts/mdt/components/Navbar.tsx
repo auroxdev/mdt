@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { Button } from '../../../components/ui/button';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../../components/ui/tooltip';
 import { Home, UserMultiple, DocumentSecurity, Report, Car, ScalesTipped } from '@carbon/icons-react';
 import { Link, useRoute } from 'wouter';
 import clsx from 'clsx';
